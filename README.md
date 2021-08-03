@@ -21,3 +21,7 @@ module.exports = {
   mode: 'development',
 };
 ```
+
+Build with Config file
+`npx webpack --config webpack.config.js`
+If named `webpack.config.js` you don't need to specify it though.
