@@ -25,3 +25,6 @@ module.exports = {
 Build with Config file
 `npx webpack --config webpack.config.js`
 If named `webpack.config.js` you don't need to specify it though.
+
+Run webpack via package script (because its added to package.json)
+`npm run build`
