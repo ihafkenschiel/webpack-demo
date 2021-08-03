@@ -13,6 +13,10 @@ module.exports = {
                 test: /\.css$/i,                        // regex, i=case-insensitive
                 use: ['style-loader', 'css-loader'],    // in order
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ],
     },
 };
