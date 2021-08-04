@@ -10,7 +10,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,                        // regex, i=case-insensitive
+                test: /\.css$/i,                        // regex, i=case-insensitive, $ means end of string
                 use: ['style-loader', 'css-loader'],    // in order
             },
             {
@@ -21,6 +21,14 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.(csv|tsv)$/i,
+                use: ['csv-loader'],
+            },
+            {
+                test: /\.xml$/i,
+                use: ['xml-loader'],
+            }
         ],
     },
 };
